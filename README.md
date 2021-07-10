@@ -1,0 +1,2 @@
+# Hackintosh-10900ES-B460M-MORTAR
+Hackintosh OpenCore EFI, i9 10900es, MSI MAGB460M Mortar, iGPU, BCM94360CS
