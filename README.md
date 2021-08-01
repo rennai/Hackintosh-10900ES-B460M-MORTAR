@@ -11,11 +11,11 @@ Hackintosh OpenCore EFI, i9 10900es, MSI MAGB460M Mortar, iGPU UHD 630, BCM94360
 
 |  - | 型号  |
 |:----------|:----------|
-| CPU      | INTEL i9 10900es    |
-| 主板      | 微星 MSI B460M Mortar （bios：E7C82IMS.141）   |
+| CPU      | INTEL i9 10900es (QTB1) |
+| 主板      | 微星 MSI B460M Mortar （bios：E7C82IMS.140）  |
 | 内存      | 光威 Gloway DDR4 3000MHz TYPE-α 16GB*2    |
 | 显卡      | 集成显卡 iGPU UHD 630  |
-| 储存      | 三星 Samsung SSD 980 1T  |
+| 储存      | WD SN750 1T |
 | 网卡      | 主板集成 RTL8125 2.5G  |
 | 无线网卡   | 苹果免驱 BCM94360CS    |
 | 系统      | MocOS big Sur 11.4    |
@@ -25,6 +25,9 @@ Hackintosh OpenCore EFI, i9 10900es, MSI MAGB460M Mortar, iGPU UHD 630, BCM94360
 
 ### OpenCore 0.7.1
 OpenCore 版本每到 x.x.1 和 x.x.6 会更新 EFI
+
+### MacOS Version
+> Big Sur 11.5.1
 
 ### 功能
 - [x]  睡眠/唤醒（bios关闭usb唤醒，睡眠后用电源键唤醒）
@@ -53,6 +56,8 @@ OpenCore 版本每到 x.x.1 和 x.x.6 会更新 EFI
 
 ## BIOS 设置
 
+### 版本 7C82v14 
+
 ### 一键设置黑苹果
 微星 Bios 里有 `D.T.M` 选项，只要打开就回把所有黑果用的设置，设置好。不用在手动一一设置。
 ![](./images/bios-dtm.png "MSI BIOS D.T.M") 
@@ -68,6 +73,12 @@ OpenCore 版本每到 x.x.1 和 x.x.6 会更新 EFI
 ![](./images/bios-4.png)
 
 ![](./images/bios-5.png)
+
+
+## 安装
+
+- 按照 `OpenCore` 官方的创建USB安装启动器的教程创建USB安装盘
+- U盘一定要插在主板背面的 USB2.0上，否则会出现 `安装器已损坏` 或 `无法载入更新` 的错误
 
 
 ## 其它问题
@@ -87,5 +98,4 @@ OpenCore 版本每到 x.x.1 和 x.x.6 会更新 EFI
 ![](./images/hackintool-device.png)
 
 ![](./images/hackintool-usb-customize.png)
-
 
