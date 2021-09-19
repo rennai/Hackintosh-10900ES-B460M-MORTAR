@@ -24,6 +24,7 @@ Hackintosh OpenCore EFI, i9 10900es, MSI MAGB460M Mortar, iGPU UHD 630, BCM94360
 - **Memory Try It!**  设置根据内存条可用时序，从后往前选。我这里直接用最慢的 `C16`
 - **时序模式** 选择 `未连结`
 -  **内存快速启动** 选择 `禁止`
+-  **DRAM电压** 设置为 `1.20V`  2666和2933都是这个电压
 - 进入 **设置** > **高级** D.M.T 选择  `Enabled`
 - **F10** 保存重启
 
