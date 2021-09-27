@@ -19,7 +19,6 @@ Hackintosh OpenCore EFI, i9 10900es, MSI MAGB460M Mortar, iGPU UHD 630, BCM94360
 
 - 还原默认设置，重启重新进入bios
 - 进入**OC**
-- 启用 **XMP**  `Enabled`
 - **频率** 根据CPU 设置为  `DDR4-2666` 或者 `DDR4-2933`
 - **Memory Try It!**  设置根据内存条可用时序，从后往前选。我这里直接用最慢的 `C16`
 - **时序模式** 选择 `未连结`
