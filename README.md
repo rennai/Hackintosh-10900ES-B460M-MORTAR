@@ -9,23 +9,12 @@ Hackintosh OpenCore EFI, i9 10900es, MSI MAGB460M Mortar, iGPU UHD 630, BCM94360
 
 
 
-## 重要问题
+## 更新
 
-### 1.打开XMP以后，偶尔死机，使用中卡死的问题。
+OpenCore 版本每到 x.x.1 和 x.x.6 会更新 EFI
 
-不开**XMP**内存频率只能跑在 `2400`，太不爽了。折腾好几天终于没问题了！！！
-
-需要手工设置内存参数。按以下步骤设置 bios：
-
-- 还原默认设置，重启重新进入bios
-- 进入**OC**
-- **频率** 根据CPU 设置为  `DDR4-2666` 或者 `DDR4-2933`
-- **Memory Try It!**  设置根据内存条可用时序，从后往前选。我这里直接用最慢的 `C16`
-- **时序模式** 选择 `未连结`
--  **内存快速启动** 选择 `禁止`
--  **DRAM电压** 设置为 `1.20V`  2666和2933都是这个电压
-- 进入 **设置** > **高级** D.M.T 选择  `Enabled`
-- **F10** 保存重启
+- 2021.12.18：升级 MacOS Monterey 12.1 与 OpenCore 0.7.6，更新驱动到最新版本。
+  - > 前几天收了一块蓝宝石的 **RX560** 所以后面我都会出一个使用 **dGPU** 的 `config.dgpu.plist`，用的时候改名覆盖 `config.plist` 即可
 
 
 
@@ -42,14 +31,7 @@ Hackintosh OpenCore EFI, i9 10900es, MSI MAGB460M Mortar, iGPU UHD 630, BCM94360
 | 无线网卡   | 苹果免驱 BCM94360CS    |
 | 系统      | MocOS big Sur 11.4    |
 
-
-## EFI
-
-### OpenCore 0.7.1
-OpenCore 版本每到 x.x.1 和 x.x.6 会更新 EFI
-
-### MacOS Version
-> Big Sur 11.5.1
+ 
 
 ### 功能
 - [x]  睡眠/唤醒（bios关闭usb唤醒，睡眠后用电源键唤醒）
