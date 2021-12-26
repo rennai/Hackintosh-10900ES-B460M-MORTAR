@@ -13,7 +13,13 @@ Hackintosh OpenCore EFI, i9 10900es, MSI MAGB460M Mortar, iGPU UHD 630, BCM94360
 
 OpenCore 版本每到 x.x.1 和 x.x.6 会更新 EFI
 
+- 2021.12.26:  升级 Monterey 后发现 USB工作异常，蓝牙休眠唤醒后无法使用
+  
+  - 重新定制USB。
+  - 蓝牙在休眠唤醒问题按照 [这里](https://github.com/Mintimate/SleepAndAutoBluetoothAndWifi) 解决。试了各种方法，只有这种有效。
+  
 - 2021.12.18：升级 MacOS Monterey 12.1 与 OpenCore 0.7.6，更新驱动到最新版本。
+
   - > 前几天收了一块蓝宝石的 **RX560** 所以后面我都会出一个使用 **dGPU** 的 `config.dgpu.plist`，用的时候改名覆盖 `config.plist` 即可
 
 
@@ -25,16 +31,19 @@ OpenCore 版本每到 x.x.1 和 x.x.6 会更新 EFI
 | CPU      | INTEL i9 10900es (QTB1) |
 | 主板      | 微星 MSI B460M Mortar （bios：E7C82IMS.140）  |
 | 内存      | 光威 Gloway DDR4 3000MHz TYPE-α 16GB*2    |
-| 显卡      | 集成显卡 iGPU UHD 630  |
+| 显卡      | 集成 iGPU UHD 630 / 蓝宝石 RX560 |
 | 储存      | WD SN750 1T |
 | 网卡      | 主板集成 RTL8125 2.5G  |
-| 无线网卡   | 苹果免驱 BCM94360CS    |
+| 无线网卡   | 苹果免驱 BCM94360CS ，转接插在M2口使用 |
 | 系统      | MocOS big Sur 11.4    |
 
- 
+- 2021.11.02 把 光威 Gloway DDR4 3000MHz TYPE-α 换成 英睿达 DDR4 3200 16G*2，解决了偶尔蓝屏的问题
+- 2021.09.06 收了一块蓝宝石 RX560
+
+
 
 ### 功能
-- [x]  睡眠/唤醒（bios关闭usb唤醒，睡眠后用电源键唤醒）
+- [x]  [睡眠](https://github.com/Mintimate/SleepAndAutoBluetoothAndWifi)/唤醒（bios关闭usb唤醒，睡眠后用电源键唤醒）
 - [x]  定制USB端口（前置USB保留3.0，删除2.0，后面板USB都可用）
 - [x]  Airdrop/Handoff/iMessage/
 - [x]  核显硬件加速
