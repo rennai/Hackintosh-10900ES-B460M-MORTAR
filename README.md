@@ -13,11 +13,17 @@ Hackintosh OpenCore EFI, i9 10900es, MSI MAGB460M Mortar, iGPU UHD 630, BCM94360
 
 OpenCore 版本每到 x.x.1 和 x.x.6 会更新 EFI
 
-- 2021.12.26:  升级 Monterey 后发现 USB工作异常，蓝牙休眠唤醒后无法使用
+- 2022.1.23：升级 OpenCore 0.7.7，修复未找到板载声卡的问题
   
+  - 卸载了上次安装的蓝牙脚本
+  - 开机后蓝牙还是连接有些慢，但基本上已经不影响使用了。
+  - 睡眠唤醒后需要等待蓝牙重新连接，时间较长
+  
+- 2021.12.26:  升级 Monterey 后发现 USB工作异常，蓝牙休眠唤醒后无法使用
+
   - 重新定制USB。
   - 蓝牙在休眠唤醒问题按照 [这里](https://github.com/Mintimate/SleepAndAutoBluetoothAndWifi) 解决。试了各种方法，只有这种有效。
-  
+
 - 2021.12.18：升级 MacOS Monterey 12.1 与 OpenCore 0.7.6，更新驱动到最新版本。
 
   - > 前几天收了一块蓝宝石的 **RX560** 所以后面我都会出一个使用 **dGPU** 的 `config.dgpu.plist`，用的时候改名覆盖 `config.plist` 即可
@@ -75,17 +81,7 @@ OpenCore 版本每到 x.x.1 和 x.x.6 会更新 EFI
 微星 Bios 里有 `D.T.M` 选项，只要打开就回把所有黑果用的设置，设置好。不用在手动一一设置。
 ![](./images/bios-dtm.png "MSI BIOS D.T.M") 
 
-### 没有 DTM 的按照下面的截图设置
 
-![](./images/bios-1.png)
-
-![](./images/bios-2.png)
-
-![](./images/bios-3.png)
-
-![](./images/bios-4.png)
-
-![](./images/bios-5.png)
 
 
 ## 安装
