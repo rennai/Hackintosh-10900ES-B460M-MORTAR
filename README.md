@@ -11,14 +11,23 @@ Hackintosh OpenCore EFI, i9 10900es, MSI MAGB460M Mortar, iGPU UHD 630, BCM94360
 
 ## 更新
 
-OpenCore 版本每到 x.x.1 和 x.x.6 会更新 EFI
+~~OpenCore 版本每到 x.x.1 和 x.x.6 会更新 EFI~~
 
-- 2022.1.23：升级 OpenCore 0.7.7，修复未找到板载声卡的问题
+买了 M1 的 MacBoock Pro ，所以这个**EFI**的更新就不稳定了。什么时候有空了什么时候升级 ：）
+
+- 20222.8.14: 升级 OpenCore 0.8.3
   
+  - 蓝牙已经没什么问题了，只有在睡眠一晚上的情况下再回出现蓝牙找不到的问题。短时间睡眠唤醒后已经没有问题
+  - 重新用 USBToolBox 定制了USB 端口，主板后面靠近网口的USB无法使用，前置USB2.0和 USB-C 的接口无法使用，内置wifi蓝牙网卡取电试试看那个能用就用哪个，RGB灯效无法使用。
+  - 添加 Heikintosh 的 OpenCore 主题，并替换了背景
+  - 升级 MacOS Monterey 到 12.5 
+  
+- 2022.1.23：升级 OpenCore 0.7.7，修复未找到板载声卡的问题
+
   - 卸载了上次安装的蓝牙脚本
   - 开机后蓝牙还是连接有些慢，但基本上已经不影响使用了。
   - 睡眠唤醒后需要等待蓝牙重新连接，时间较长
-  
+
 - 2021.12.26:  升级 Monterey 后发现 USB工作异常，蓝牙休眠唤醒后无法使用
 
   - 重新定制USB。
@@ -40,8 +49,8 @@ OpenCore 版本每到 x.x.1 和 x.x.6 会更新 EFI
 | 显卡      | 集成 iGPU UHD 630 / 蓝宝石 RX560 |
 | 储存      | WD SN750 1T |
 | 网卡      | 主板集成 RTL8125 2.5G  |
-| 无线网卡   | 苹果免驱 BCM94360CS ，转接插在M2口使用 |
-| 系统      | MocOS big Sur 11.4    |
+| 无线网卡   | 苹果免驱 BCM94360CS ，使用PIC转接卡 |
+| 系统      | MocOS Monterey 12.5 |
 
 - 2021.11.02 把 光威 Gloway DDR4 3000MHz TYPE-α 换成 英睿达 DDR4 3200 16G*2，解决了偶尔蓝屏的问题
 - 2021.09.06 收了一块蓝宝石 RX560
